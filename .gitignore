@@ -48,7 +48,7 @@ SeleniumHomeWork1
 SeleniumLocators
 SoftAssertClass
 TestNG
-test-output
+
 .env
 GetWindowHandle
 SeleniumIntro
