@@ -51,9 +51,13 @@ TestNG
 
 .env
 GetWindowHandle
+
 SeleniumIntro
 iFrame
 practice.java
 bank
 blaze
 openchart
+.gitignore
+
+com.test.bank
