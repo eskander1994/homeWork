@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-        
-<suite name="smoke runner">
-    <test name="restaurant">
-        <classes>
-            <class name="com.test.restaurant.tests.validateSearchSeaFood"></class>
-        </classes>
-    </test>
-</suite>
