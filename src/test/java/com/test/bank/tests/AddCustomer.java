@@ -1,5 +1,6 @@
 package com.test.bank.tests;
 
+import Utils.ConfigReader;
 import com.test.bank.pages.BankMangerPage;
 import com.test.bank.pages.bankLoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -55,8 +56,8 @@ public void validateCustomerFunctionality() throws InterruptedException {
     bankLoginPage bankLoginPage = new bankLoginPage(driver);
     bankLoginPage.clickMangerButton();
     BankMangerPage bankMangerPage = new BankMangerPage(driver);
-    bankMangerPage.addCustomerFunctionality(driver, "Eskander", "Eskander", "123456",
-            "Customer added successfully with customer");
+    bankMangerPage.addCustomerFunctionality(driver, ConfigReader.readProperty("QA_openChart_firstname"), "QA_openChart_lastname", "QA_postcode",
+            "QA_alertmassage");
     bankMangerPage.openAccountFunctionality(driver,"Eskander Eskander","Dollar",
             "Account created successfully with account Number ");
     bankMangerPage.customerFunctionality("Eskander","Eskander","123456");

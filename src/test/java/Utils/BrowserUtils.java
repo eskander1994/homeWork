@@ -16,7 +16,7 @@ public class BrowserUtils {
     public static void selectBy(WebElement location ,String value , String methodName){
         Select select = new Select(location);
         switch (methodName){
-            case "test":
+            case "text":
                 select.selectByVisibleText(value);
                 break;
             case "value":

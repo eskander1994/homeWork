@@ -1,12 +1,24 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="smoke Runner">
     <test name="bank">
+        <parameter name="expectHeader" value="XYZ Bank"></parameter>
         <classes>
             <class name="com.test.bank.tests.BankLoginTest"></class>
             
         </classes>
     </test>
     <test name="blaze">
+        <parameter name="selectItem" value="laptops"></parameter>
+        <parameter name="lapTop" value="MacBook Pro"></parameter>
+        <parameter name="expectProduct" value="Product added"></parameter>
+        <parameter name="userName" value="eskander"></parameter>
+        <parameter name="country" value="usa"></parameter>
+        <parameter name="city" value="des plaines"></parameter>
+        <parameter name="cardNumber" value="1234567"></parameter>
+        <parameter name="month" value="08"></parameter>
+        <parameter name="year" value="23"></parameter>
+        <parameter name="expectSuccessMessage" value="Thank you for your purchase!"></parameter>
+        <parameter name="expectUrl" value="https://www.demoblaze.com/cart.html"></parameter>
         <classes>
             <class name="com.test.blaze.test.OrderTest"></class>
         </classes>

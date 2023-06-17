@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="smoke test">
+    <test name="codeFish">
+
+        <parameter name="expect" value="Cart"> </parameter>
+        <classes>
+            <class name="com.test.codeFish.test.Cart"></class>
+        </classes>
+    </test>
+</suite>

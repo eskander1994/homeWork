@@ -9,11 +9,11 @@
             <class name="com.test.blaze.test.OrderTest"></class>
         </classes>
     </test>
-    <test name="Bank Tests">
-        <classes>
-            <class name="com.test.bank.tests.BankLoginTest"></class>
-            <class name="com.test.bank.tests.customerTest"></class>
-            <class name="com.test.bank.tests.AddCustomer"></class>
-        </classes>
-    </test>
+<!--    <test name="Bank Tests">-->
+<!--        <classes>-->
+<!--            <class name="com.test.bank.tests.BankLoginTest"></class>-->
+<!--            <class name="com.test.bank.tests.customerTest"></class>-->
+<!--            <class name="com.test.bank.tests.AddCustomer"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

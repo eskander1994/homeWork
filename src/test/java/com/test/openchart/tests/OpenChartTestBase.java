@@ -1,5 +1,6 @@
 package com.test.openchart.tests;
 
+import Utils.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,7 +21,7 @@ public class OpenChartTestBase {
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://demo.opencart.com/admin/index.php?route=common/login");
+        driver.get(ConfigReader.readProperty("QA_url"));
     }
 
     @AfterMethod

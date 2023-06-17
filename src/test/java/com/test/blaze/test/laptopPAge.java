@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
 public class laptopPAge extends blazeTestBase {
+
   @Test
   public void testLopTopPage() throws InterruptedException {
     MainPage mainPage = new MainPage(driver);

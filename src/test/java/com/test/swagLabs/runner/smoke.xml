@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="smoke">
+    <test name="sawagLabs">
+        <classes>
+            <class name="com.test.swagLabs.test.loginTest"></class>
+            <class name="com.test.swagLabs.test.validateAllItemsMainPage"></class>
+        </classes>
+    </test>
+</suite>

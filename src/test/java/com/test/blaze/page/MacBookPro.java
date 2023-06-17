@@ -39,5 +39,8 @@ public class MacBookPro {
     public void cartButton(){
        cartButton.click();
     }
+    public void  addButton(){
+       addButton.click();
+    }
 
 }

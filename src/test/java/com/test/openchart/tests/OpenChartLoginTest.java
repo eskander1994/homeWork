@@ -1,5 +1,6 @@
 package com.test.openchart.tests;
 
+import Utils.ConfigReader;
 import com.test.openchart.pages.CustomersPage;
 import com.test.openchart.pages.LoginPage;
 import com.test.openchart.pages.mainPage;
@@ -10,7 +11,7 @@ public class OpenChartLoginTest extends OpenChartTestBase  {
     @Test
     public void happyPathLogin() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.loginFunc("demo","demo");
+        loginPage.loginFunc(ConfigReader.readProperty("QA_openChart_username"),ConfigReader.readProperty("QA_openChart_password"));
         Assert.assertEquals(driver.getTitle(),"Dashboard");
     }
     @Test
